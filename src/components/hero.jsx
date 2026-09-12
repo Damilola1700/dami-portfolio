@@ -37,7 +37,7 @@ function Hero() {
         </p>
 
      
-        <div className="flex items-center gap-[14px] flex-wrap justify-center mb-[58px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-[14px]  justify-center mb-[58px]">
           
           <a
             href="#projects"
@@ -54,24 +54,7 @@ function Hero() {
           </a>
         </div>
 
-           {/* socials here */}
-
-        {/* <div className="flex gap-3">
-          <a
-            href="#"
-            aria-label="Behance"
-            className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-white/15 text-[#cfcbc4] transition-all hover:-translate-y-0.5 hover:border-[#FF6B35] hover:text-[#FF6B35]"
-          >
-            
-          </a>
-          <a
-            href="#"
-            aria-label="LinkedIn"
-            className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-white/15 text-[#cfcbc4] transition-all hover:-translate-y-0.5 hover:border-[#FF6B35] hover:text-[#FF6B35]"
-          >
-           
-          </a>
-        </div> */}
+   
       </div>
     </section>
   );
