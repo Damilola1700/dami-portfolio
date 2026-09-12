@@ -36,7 +36,7 @@ function Project() {
       {
       id: 3,
       title: "GetIt",
-      description: "A delivery app casestudy.",
+      description: "A delivery app casestudy.COMING SOON",
       image: summary,
       category: "Design",
       technologies: ["Figma"],

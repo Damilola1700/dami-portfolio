@@ -3,12 +3,7 @@ import { FaBehance, FaLinkedinIn } from "react-icons/fa";
 
 function Hero() {
   return (
-    //  <section id="hero" className=" h-[500px] w-full mb-[20px] mx-auto pt-[20px]  justify-center px-4 bg-blue-500 scroll-mt-24">
-    //     <h2>My hero</h2>
-    //     <p>
-    //       I'm a UI/UX designer and frontend developer.
-    //     </p>
-    //   </section>
+   
 
     <section
       id="hero"
@@ -28,17 +23,12 @@ function Hero() {
         </div>
 
        
-        <h1 className=" italic px-20 font-medium text-[20px] md:text-[80px] leading-[0.98] tracking-[-0.01em] text-[#F7F4EF] mb-2">
+        <h1 className=" italic sm:px-10 md:px-20 font-medium text-[20px] md:text-[80px] leading-[0.98] tracking-[-0.01em] text-[#F7F4EF] mb-2">
           Ogunsakin Damilola Loveth
         </h1>
 
-      
-        {/* <p className=" text-[12px] font-semibold uppercase tracking-[0.18em] text-[#8f8b85] mb-[30px]">
-          UI/UX Designer & Frontend Designer
-        </p> */}
-
         
-        <p className="italic px-16 text-[12px] md:text-[16px] leading-[1.5] text-[#c9c5be] max-w-[640px] mb-[20px]">
+        <p className="italic sm:px-8 md:px-16 text-[12px] md:text-[16px] leading-[1.5] text-[#c9c5be] max-w-[640px] mb-[20px]">
           I'm a 
            <span className="not-italic text-[#FF9466] bg-[#FF6B35]/10 px-1.5 rounded-sm ">
           UI/UX designer and Developer

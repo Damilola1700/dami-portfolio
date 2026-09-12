@@ -67,7 +67,7 @@ function Navbar() {
 
             <label
               htmlFor="menu-toggle"
-              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/10"
+              className="flex  cursor-pointer items-center justify-center "
             >
               <FiMenu className="text-xl" />
             </label>
@@ -103,7 +103,7 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/CV.pdf"
                   className="rounded-full bg-[#FF6B35] px-5 py-2 text-center text-[12px] font-medium text-[#FBFDFA]"
                 >
                   My CV
