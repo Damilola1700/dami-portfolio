@@ -1,4 +1,4 @@
-import image from "../assets/easyKlean.png";
+import image from "../assets/easyklean.png";
 import shopExtra from "../assets/shopExtra.png";
 
 import summary from "../assets/summary.png";
