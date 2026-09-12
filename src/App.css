@@ -1,0 +1,8 @@
+/* @import "tailwindcss"; */
+*{
+    font-family:"DM Serif Text", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
