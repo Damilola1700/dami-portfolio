@@ -1,5 +1,6 @@
 import image from "../assets/easyklean.png";
 import shopExtra from "../assets/shopExtra.png";
+import eeee from "../assets/eeee.png";
 
 import summary from "../assets/summary.png";
 import landing from "../assets/landing.png";
@@ -52,6 +53,17 @@ function Project() {
       category: "Dev Work",
       technologies: ["React","MongoDB"],
       liveLink: "https://riko-blog-one.vercel.app/",
+      githubLink: "null",
+    },
+
+    {
+      id: 5,
+      title: "JobNest",
+      description: "A responsive job search website,where user can view jobs,compare jobsand apply.",
+      image: eeee,
+      category: "Dev Work",
+      technologies: ["React"],
+      liveLink: "https://jobnest-delta.vercel.app/",
       githubLink: "null",
     },
   ];
