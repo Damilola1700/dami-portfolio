@@ -55,7 +55,7 @@ function Navbar() {
 
        
           <a
-            href="/CV.pdf"
+            href="/Ogunsakin-CV.pdf"
             className="hidden rounded-full bg-[#FF6B35] px-6 py-2 text-[12px] font-medium text-[#FBFDFA] transition-transform hover:scale-105 md:block"
           >
             My CV
