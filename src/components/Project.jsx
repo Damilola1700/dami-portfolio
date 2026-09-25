@@ -1,6 +1,7 @@
 import image from "../assets/easyklean.png";
 import shopExtra from "../assets/shopExtra.png";
 import eeee from "../assets/eeee.png";
+import dashboard from "../assets/dashboard.png"
 
 import summary from "../assets/summary.png";
 import landing from "../assets/landing.png";
@@ -14,7 +15,7 @@ function Project() {
     {
       id: 1,
       title: "EasyKlean",
-      description: "Laundry and cleaning servicce website.",
+      description: "Laundry and cleaning service website.",
       image: image,
       category: "Design",
       technologies: ["Figma"],
@@ -25,6 +26,18 @@ function Project() {
 
     {
       id: 2,
+      title: "Admin Dashboard & Management",
+      description: "A centralized dashboard designed to help administrators monitor and manage the platform.",
+      image: dashboard,
+      category: "Design",
+      technologies: ["Figma"],
+      liveLink:
+        "https://www.behance.net/gallery/256238595/Admin-Dashboard",
+      githubLink: "null",
+    },
+
+    {
+      id: 3,
       title: "ShopExtra",
       description: "Ecommerce for a luxury fashion brand.",
       image: shopExtra,
@@ -35,7 +48,7 @@ function Project() {
     },
 
       {
-      id: 3,
+      id: 4,
       title: "GetIt",
       description: "A delivery app casestudy.COMING SOON",
       image: summary,
@@ -46,7 +59,7 @@ function Project() {
     },
 
        {
-      id: 4,
+      id: 5,
       title: "RIKO",
       description: "A responsive blog website,where user can view blog,post blog and interact.",
       image: landing,
@@ -57,7 +70,7 @@ function Project() {
     },
 
     {
-      id: 5,
+      id: 6,
       title: "JobNest",
       description: "A responsive job search website,where user can view jobs,compare jobsand apply.",
       image: eeee,
