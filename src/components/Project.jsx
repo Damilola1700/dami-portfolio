@@ -2,6 +2,7 @@ import image from "../assets/easyklean.png";
 import shopExtra from "../assets/shopExtra.png";
 import eeee from "../assets/eeee.png";
 import dashboard from "../assets/dashboard.png"
+import getit from "../assets/getit.png"
 
 import summary from "../assets/summary.png";
 import landing from "../assets/landing.png";
@@ -50,11 +51,11 @@ function Project() {
       {
       id: 4,
       title: "GetIt",
-      description: "A delivery app casestudy.COMING SOON",
-      image: summary,
+      description: "A delivery app UX Casestudy",
+      image: getit,
       category: "Design",
       technologies: ["Figma"],
-      liveLink: "null",
+      liveLink: "https://www.behance.net/gallery/256526059/GetIt-Delivery-Casestudy",
       githubLink: "null",
     },
 
