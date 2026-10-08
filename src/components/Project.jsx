@@ -1,13 +1,13 @@
 import image from "../assets/easyklean.png";
 import shopExtra from "../assets/shopExtra.png";
 import eeee from "../assets/eeee.png";
-import dashboard from "../assets/dashboard.png"
-import getit from "../assets/getit.png"
+import dashboard from "../assets/dashboard.png";
+import getit from "../assets/getit.png";
 
 import summary from "../assets/summary.png";
 import landing from "../assets/landing.png";
 import { useState } from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
 function Project() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -16,7 +16,7 @@ function Project() {
     {
       id: 1,
       title: "EasyKlean",
-      description: "Laundry and cleaning service website.",
+      description: "A Laundry and cleaning service website.",
       image: image,
       category: "Design",
       technologies: ["Figma"],
@@ -28,44 +28,46 @@ function Project() {
     {
       id: 2,
       title: "Admin Dashboard & Management",
-      description: "A centralized dashboard designed to help administrators monitor and manage the platform.",
+      description:
+        "A centralized dashboard designed to help administrators monitor and manage the platform.",
       image: dashboard,
       category: "Design",
-      technologies: ["Figma"],
-      liveLink:
-        "https://www.behance.net/gallery/256238595/Admin-Dashboard",
+      technologies: ["Figma", "Behance"],
+      liveLink: "https://www.behance.net/gallery/256238595/Admin-Dashboard",
       githubLink: "null",
     },
 
     {
       id: 3,
       title: "ShopExtra",
-      description: "Ecommerce for a luxury fashion brand.",
+      description: "Ecommerce fashion brand website.",
       image: shopExtra,
       category: "Dev Work",
-      technologies: ["javascript"],
+      technologies: ["Javascript", "Vercel"],
       liveLink: "https://github.com/Damilola1700",
       githubLink: "https://github.com/Damilola1700",
     },
 
-      {
+    {
       id: 4,
       title: "GetIt",
-      description: "A delivery app UX Casestudy",
+      description: "A Delivery App UX Casestudy",
       image: getit,
       category: "Design",
-      technologies: ["Figma"],
-      liveLink: "https://www.behance.net/gallery/256526059/GetIt-Delivery-Casestudy",
+      technologies: ["Figma", "Behance"],
+      liveLink:
+        "https://www.behance.net/gallery/256526059/GetIt-Delivery-Casestudy",
       githubLink: "null",
     },
 
-       {
+    {
       id: 5,
       title: "RIKO",
-      description: "A responsive blog website,where user can view blog,post blog and interact.",
+      description:
+        "A responsive blog and social website,user can view blog,post blog and interact.",
       image: landing,
       category: "Dev Work",
-      technologies: ["React","MongoDB"],
+      technologies: ["React", "MongoDB", "Github", "Vercel", "Rest API"],
       liveLink: "https://riko-blog-one.vercel.app/",
       githubLink: "null",
     },
@@ -73,21 +75,20 @@ function Project() {
     {
       id: 6,
       title: "JobNest",
-      description: "A responsive job search website,where user can view jobs,compare jobsand apply.",
+      description:
+        "A responsive job search website,user can view jobs,compare and apply for roles.",
       image: eeee,
       category: "Dev Work",
-      technologies: ["React"],
+      technologies: ["React", "Rest API"],
       liveLink: "https://jobnest-delta.vercel.app/",
       githubLink: "null",
     },
   ];
 
-
   const filteredProjects =
     activeFilter === "All"
       ? projects
       : projects.filter((project) => project.category === activeFilter);
-
 
   return (
     <section
@@ -100,8 +101,6 @@ function Project() {
           Projects
         </p>
       </div>
-
-     
 
       <div className="flex  justify-center gap-2.5 md:gap-4 overflow-x-auto sm:overflow-visible pb-4 mb-4 md:mb-6">
         {["All", "Design", "Dev Work"].map((filter) => (
@@ -119,68 +118,72 @@ function Project() {
         ))}
       </div>
 
-      
-
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 lg:gap-8 pt-10">
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="group flex flex-col justify-between rounded-3xl overflow-hidden border border-[#2b2b32] bg-[#111114] hover:border-[#FF6B35]/40 transition duration-300"
+            className="group relative flex flex-col justify-between min-h-[420px] rounded-3xl overflow-hidden border border-[#2b2b32] bg-[#111114] transition-all duration-300 hover:border-[#FF6B35]/60 hover:shadow-[0_0_40px_rgba(255,107,53,0.18)]"
           >
-            <div className="relative aspect-[16/9] overflow-hidden bg-[#18181c]">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              />
+            <img
+              src={project.image}
+              alt={project.title}
+              className="absolute inset-0 w-full h-full object-contain object- object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-500"
+            />
+            {/* overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/95 group-hover:from-black/20 group-hover:via-black/40 transition duration-500" />
+
+            <div className="relative z-10 flex items-center justify-between p-5">
+              <span className="px-3 py-1 rounded-full border border-[#FF6B35]/40 bg-black/20 backdrop-blur-sm text-[#FF6B35] text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider">
+                {project.category}
+              </span>
+              <span className="px-3 py-1 rounded-full bg-[#FF6B35] text-white text-[10px] sm:text-[11px] font-bold tracking-wider">
+                {String(project.id).padStart(2, "0")}
+              </span>
             </div>
 
-            <div className="p-5 flex-grow flex flex-col justify-between">
-              <div>
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-[14px] sm:text-[15px] font-medium text-[#f1f1f1] group-hover:text-[#FF6B35] transition duration-300">
-                    {project.title}
-                  </h3>
-                  <span className="text-[#FF6B35]/70 text-xs font-mono">
-                    {String(project.id).padStart(2, "0")}
+            <div className="relative z-10 p-5 pt-0">
+              <h3 className="text-xl sm:text-2xl font-extrabold uppercase tracking-wide text-white group-hover:text-[#FF6B35] transition duration-300">
+                {project.title}
+              </h3>
+
+              <p className="mt-2 text-white/80 leading-relaxed text-[13px] sm:text-[14px]">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-1.5 mt-4">
+                {project.technologies.map((technology) => (
+                  <span
+                    key={technology}
+                    className="px-2.5 py-1 rounded-md bg-black/50 border border-white/15 text-white/80 text-[10px] sm:text-[11px] font-medium"
+                  >
+                    {technology}
                   </span>
-                </div>
-                <p className="text-[#ffffff]/60 mt-2 leading-relaxed text-[12px] sm:text-[13px]">
-                  {project.description}
-                </p>
+                ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-6 pt-4 border-t border-[#2b2b32]/40">
-                <div className="flex flex-wrap gap-1.5">
-                  {project.technologies.map((technology) => (
-                    <span
-                      key={technology}
-                      className="px-2.5 py-0.5 rounded-md bg-[#18181c] border border-[#2b2b32] text-[#f1f1f1]/60 text-[10px] uppercase tracking-wider"
-                    >
-                      {technology}
-                    </span>
-                  ))}
-                </div>
-
-                {project.liveLink && (
+              {project.liveLink && (
+                <div className="mt-5 pt-4 border-t border-white/10">
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-[#FF6B35] hover:bg-[#e85b29] text-white text-[11px] sm:text-[12px] font-medium transition whitespace-nowrap self-start sm:self-auto w-full sm:w-auto"
+                    className="inline-flex items-center gap-2 text-[#ff6b35] group-hover:text-[#FF6B35]  text-[12px] sm:text-[13px] font-semibold uppercase tracking-wide transition duration-300"
                   >
-                    Live Demo
-                    <FaExternalLinkAlt className="text-[10px]" />
+                    View Live Demo
+                    <FaArrowRight className="text-[12px] group-hover:translate-x-1 transition duration-300" />
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </div>
+
+            {/* bottom bar hover */}
+            <div
+              className="absolute bottom-0 left-0 h-[3px] w-full bg-[#FF6B35] origin-left transition-transform duration-500
+              scale-x-100 lg:scale-x-0 lg:group-hover:scale-x-100"
+            />
           </div>
         ))}
       </div>
-
-      
-
     </section>
   );
 }
