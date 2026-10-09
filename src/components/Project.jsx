@@ -1,11 +1,10 @@
-import image from "../assets/easyklean.png";
+
+import image from "../assets/easyclean.png"
 import shopExtra from "../assets/shopExtra.png";
-import eeee from "../assets/eeee.png";
+import eeee from "../assets/jobnest.png";
 import dashboard from "../assets/dashboard.png";
 import getit from "../assets/getit.png";
-
-import summary from "../assets/summary.png";
-import landing from "../assets/landing.png";
+import landing from "../assets/riko.png";
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
@@ -19,7 +18,7 @@ function Project() {
       description: "A Laundry and cleaning service website.",
       image: image,
       category: "Design",
-      technologies: ["Figma"],
+      technologies: ["Figma", "Behance"],
       liveLink:
         "https://www.behance.net/gallery/244231829/Laundry-service-website",
       githubLink: "null",
@@ -122,12 +121,12 @@ function Project() {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="group relative flex flex-col justify-between min-h-[420px] rounded-3xl overflow-hidden border border-[#2b2b32] bg-[#111114] transition-all duration-300 hover:border-[#FF6B35]/60 hover:shadow-[0_0_40px_rgba(255,107,53,0.18)]"
+            className="group relative flex flex-col justify-between min-h-[420px]  rounded-3xl overflow-hidden border border-[#2b2b32] bg-[#111114] transition-all duration-300 hover:border-[#FF6B35]/60 hover:shadow-[0_0_40px_rgba(255,107,53,0.18)]"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="absolute inset-0 w-full h-full object-contain object- object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-500"
+              className="absolute inset-0 w-full  h-full   object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-500"
             />
             {/* overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/95 group-hover:from-black/20 group-hover:via-black/40 transition duration-500" />
