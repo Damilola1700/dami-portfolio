@@ -5,6 +5,7 @@ import eeee from "../assets/jobnest.png";
 import dashboard from "../assets/dashboard.png";
 import getit from "../assets/getit.png";
 import landing from "../assets/riko.png";
+import triscale from "../assets/triscale.png";
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
@@ -38,13 +39,13 @@ function Project() {
 
     {
       id: 3,
-      title: "ShopExtra",
-      description: "Ecommerce fashion brand website.",
-      image: shopExtra,
-      category: "Dev Work",
-      technologies: ["Javascript", "Vercel"],
-      liveLink: "https://github.com/Damilola1700",
-      githubLink: "https://github.com/Damilola1700",
+      title: "Triscale",
+      description: "Saas Dashboard Pricing page design.",
+      image: triscale,
+      category: "Design",
+      technologies: ["Figma", "Behance"],
+      liveLink: "https://www.behance.net/gallery/257512621/TriScale-SaaS-Dashboard-Pricing-Page-Design",
+      githubLink: "null",
     },
 
     {
