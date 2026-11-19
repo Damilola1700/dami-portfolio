@@ -13,7 +13,7 @@ function App() {
     <>
       <main className="bg-[#000000]">
         <Navbar />
-        <section className="rounded-xl bg-[#0b0b0c] w-[95%] mx-auto mt-[20px] mb-[20px] p-4">
+        <section className="rounded-xl bg-[#0b0b0c] w-[95%] mx-auto mt-[20px] mb-[20px] p-">
           <Hero />
           <About />
           <Project />

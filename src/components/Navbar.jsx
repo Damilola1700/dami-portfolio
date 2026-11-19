@@ -72,7 +72,7 @@ function Navbar() {
               <FiMenu className="text-xl" />
             </label>
 
-            <div className="pointer-events-none absolute right-0 top-14 w-56 translate-y-[-10px] rounded-2xl border border-white/10 bg-[#1A1D22] p-5 opacity-0 shadow-xl transition-all duration-300 peer-checked:pointer-events-auto peer-checked:translate-y-0 peer-checked:opacity-100">
+            <div className="pointer-events-none absolute right-0 top-14 w-56 translate-y-[-10px] rounded-2xl border border-white/10 bg-[#1A1D22]/80 p-5 opacity-0 shadow-xl transition-all duration-300 peer-checked:pointer-events-auto peer-checked:translate-y-0 peer-checked:opacity-100">
               <div className="flex flex-col gap-5">
                 <a
                   href="#about"
@@ -110,6 +110,8 @@ function Navbar() {
                 </a>
               </div>
             </div>
+
+            
           </div>
         </div>
       </nav>
