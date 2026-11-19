@@ -1,14 +1,4 @@
-// function Skills() {
-//   return (
-//    <section id="skill" className="h-[700px] text-white -blue-500 scroll-mt-24">
-//       <h2>My skills</h2>
-//       <p>
-//         I'm a UI/UX designer and frontend developer.
-//       </p>
-//     </section>
-//   );
-// }
-// export default Skills;
+
 
 import { FaFigma, FaReact, FaGitAlt, FaGithub, FaGoogle } from "react-icons/fa";
 import { SiMongodb, SiJavascript, SiTailwindcss } from "react-icons/si";

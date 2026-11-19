@@ -21,9 +21,7 @@ function Footer() {
     <footer className="bg-[#0b0b0c] text-[#f1f1f1] px-4 md:px-6 py-6">
       <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-10 items-center border-b border-gray-400 pb-6">
         <div>
-          {/* <h1 className="text-xl font-bold ">
-            DEL<span className="text-[#f83151]">DESIGNS</span>
-          </h1> */}
+          
 
           <NavLink
             to="/"
@@ -69,7 +67,7 @@ function Footer() {
           </a>
 
           <a
-            // href="#"
+           
              href="https://mail.google.com/mail/?view=cm&fs=1&to=lovethdamilola206@gmail.com&su=Project%20Inquiry"
               target="_blank"
               rel="noopener noreferrer"
