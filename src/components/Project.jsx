@@ -6,6 +6,7 @@ import dashboard from "../assets/dashboard.png";
 import getit from "../assets/getit.png";
 import landing from "../assets/riko.png";
 import triscale from "../assets/triscale.png";
+import rakota from "../assets/rakota.png";
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
@@ -81,6 +82,17 @@ function Project() {
       category: "Dev Work",
       technologies: ["React", "Rest API"],
       liveLink: "https://jobnest-delta.vercel.app/",
+      githubLink: "null",
+    },
+    {
+      id: 7,
+      title: "Rakota",
+      description:
+        "A Sales Management web app designed to help business owners monitor buisness performance",
+      image: rakota,
+      category: "Dev Work",
+      technologies: ["React", "Rest API"],
+      liveLink: "https://rakota.vercel.app/",
       githubLink: "null",
     },
   ];
